@@ -5,7 +5,8 @@ const Hero = () => {
   return (
     <div
       className="relative sm:mx-auto mt-[10rem] pl-[6rem] sm:flex sm:flex-col 
-    sm:w-[90%] sm:p-0 sm:justify-around sm:items-center sm:gap-7 sm:h-fit sm:h-[50%]"
+   sm:p-0 sm:justify-around sm:items-center sm:gap-7 sm:h-fit sm:w-screen 
+    "
     >
       <h1 className="text-left text-white text-[65px] sm:text-[3rem] font-bold sm:text-center">
         Vous êtes un boucher{" "}
@@ -16,7 +17,8 @@ const Hero = () => {
 
       <p
         className="relative text-white text-left text-[40px] sm:text-[25px] sm:text-center 
-        sm:leading-loose mx-auto h-fit "
+        sm:leading-loose mx-auto  w-[508px] sm:w-[350px] h-[232px] lg:text-left
+        lg:mx-0 lg:mt-10"
       >
         Rejoignez notre équipe <br />
         du
@@ -35,7 +37,7 @@ const Hero = () => {
         <img
           src="/grande-fleche.svg"
           alt="Grande fleche"
-          className="absolute left-[50px] sm:left-0 top-[230px] sm:top-[150px] 
+          className="absolute lg:left-[-3rem] sm:left-[-2rem] top-[230px] sm:top-[190px] 
           sm:w-[80px] sm:h-[70px]"
         />
       </p>
@@ -68,11 +70,11 @@ const Hero = () => {
           className="justify-self-start m-0 p-0"
         />
       </div>
-      <div className="relative flex justify-center">
+      <div className="relative flex justify-center mx-0 w-[506px] h-fit text-center">
         <img
           src="/arrow-down.svg"
           alt="top group"
-          className="justify-self-cener mx-auto mt-[1rem] sm:mt-0"
+          className="text-center mx-auto mt-[1rem] sm:mt-0 lg:mx-0"
         />
       </div>
     </div>
