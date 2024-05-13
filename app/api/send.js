@@ -1,6 +1,4 @@
 "use server";
-
-import EmailTemplate from "@/pages/Email-template";
 import { Resend } from "resend";
 
 const resend = new Resend("re_WJAxs4u4_CQVtbqTHyC1SC991BiNpki2R");
@@ -20,10 +18,10 @@ export default async function POST(values) {
             </div>`,
     });
 
-    console.log("Email sent:", data);
+    
     return { status: "success", message: "Email sent successfully" };
   } catch (error) {
-    console.error("Error sending email:", error);
+    
     return { status: "error", message: "Error sending email", error };
   }
 }
